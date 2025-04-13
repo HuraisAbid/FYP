@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LMS Dashboard</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="min-h-screen bg-gradient-to-r from-blue-500 via-purple-600 to-pink-500 text-white">
+
+  <!-- Sidebar -->
+  <div class="flex">
+    <div class="w-64 bg-gray-900 bg-opacity-80 min-h-screen p-5 transform transition-transform duration-700 translate-x-0">
+      <h2 class="text-2xl font-bold mb-8 animate-pulse">LMS - Management</h2>
+      <ul class="space-y-4">
+        <li class="hover:text-yellow-300 transition-colors duration-300 cursor-pointer">Dashboard</li>
+        <li class="hover:text-yellow-300 transition-colors duration-300 cursor-pointer">Config Settings</li>
+        <li class="hover:text-yellow-300 transition-colors duration-300 cursor-pointer">Students</li>
+        <li class="hover:text-yellow-300 transition-colors duration-300 cursor-pointer">Human Resources</li>
+        <li class="hover:text-yellow-300 transition-colors duration-300 cursor-pointer">Exam Settings</li>
+        <li class="hover:text-yellow-300 transition-colors duration-300 cursor-pointer">Routine/Timetable</li>
+        <li class="hover:text-yellow-300 transition-colors duration-300 cursor-pointer">Finance</li>
+        <li class="hover:text-yellow-300 transition-colors duration-300 cursor-pointer">Institute Settings</li>
+        <li class="hover:text-yellow-300 transition-colors duration-300 cursor-pointer">Library</li>
+        <li class="hover:text-yellow-300 transition-colors duration-300 cursor-pointer">News Letter</li>
+        <li class="hover:text-yellow-300 transition-colors duration-300 cursor-pointer">Settings</li>
+      </ul>
+    </div>
+
+    <!-- Main Content -->
+    <div class="flex-1 p-10 animate-fadeIn">
+      <!-- Top Bar -->
+      <div class="flex justify-between items-center mb-10">
+        <div class="text-lg">🔔 Alerts</div>
+        <div class="text-lg">👤 Super Admin</div>
+      </div>
+
+      <!-- Cards -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-10">
+        <div class="bg-purple-700 p-6 rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300 cursor-pointer">
+          <h3 class="text-xl font-semibold mb-2">Department</h3>
+          <p>View List</p>
+        </div>
+        <div class="bg-orange-500 p-6 rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300 cursor-pointer">
+          <h3 class="text-xl font-semibold mb-2">Students</h3>
+          <p>View List</p>
+        </div>
+        <div class="bg-pink-500 p-6 rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300 cursor-pointer">
+          <h3 class="text-xl font-semibold mb-2">Teacher</h3>
+          <p>View List</p>
+        </div>
+        <div class="bg-green-500 p-6 rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300 cursor-pointer">
+          <h3 class="text-xl font-semibold mb-2">Subject</h3>
+          <p>View List</p>
+        </div>
+      </div>
+
+      <!-- Recent Activity & Calendar -->
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+        <!-- Recent Activity -->
+        <div class="bg-white bg-opacity-10 p-6 rounded-lg shadow-lg">
+          <h3 class="text-2xl font-semibold mb-4">Recent Activity</h3>
+          <ul class="space-y-2">
+            <li>📅 Calendar updated</li>
+            <li>💬 Commented on a post</li>
+            <li>👨‍🎓 New student has been added</li>
+            <li>👔 New employee has been added</li>
+            <li>📝 Student Attendance</li>
+            <li>📊 Reports generated</li>
+            <li>📚 Student Subject Allocation</li>
+            <li>🧾 Student List Updated</li>
+          </ul>
+        </div>
+
+        <!-- Academic Calendar -->
+        <div class="bg-white bg-opacity-10 p-6 rounded-lg shadow-lg">
+          <h3 class="text-2xl font-semibold mb-4">Academic Calendar</h3>
+          <div class="h-64 bg-gray-800 rounded-lg flex items-center justify-center text-gray-400">
+            Calendar Placeholder
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <style>
+    /* Additional animation */
+    @keyframes fadeIn {
+      0% { opacity: 0; transform: translateY(20px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+    .animate-fadeIn {
+      animation: fadeIn 1s ease-in-out;
+    }
+  </style>
+
+</body>
+</html>
